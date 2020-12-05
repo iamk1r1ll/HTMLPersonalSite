@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    color: white;
+    font-size: 18px;
+}
+nav div {
+    margin: 10px;
+}
+.navbar_list ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+.header {
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.header img{
+    height: 100vh;
+    width: 100vw;
+}
+.header__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    text-align: center;
+}
+.header__container button {
+    border-radius: 5%;
+    border: white solid 4px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 30px;
+}
+.header__container button:hover {
+    cursor: pointer;
+}
+.main {
+    margin: 75px 100px;
+    text-align: center;
+    color: gray;
+}
+.main h1 {
+    color: black;
+    margin: 5px 0px;
+}
+.yellow {
+    margin-bottom: 75px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.orange {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 48%;
+}
+.orange img {
+    object-fit: cover;
+    height: 400px;
+}
+.prefooter {
+    height: 40px;
+    background: rgb(48, 46, 46);
+    text-align: center;
+    color: gray;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+.footer {
+    height: 100px;
+    background: black;
+    text-align: center;
+    color: gray;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+@media(max-width: 650px) {
+    .navbar_list {
+        display: none;
+    }
+    .header__container {
+        font-size: 60px;
+    }
+    .main {
+        margin: 65px 50px 45px 50px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .orange {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .yellow {
+        margin-bottom: 35px;
+    }
+    .prefooter {
+        font-size: 12px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
+@media(max-width: 500px) {
+    .header__container {
+        font-size: 50px;
+    }
+}
